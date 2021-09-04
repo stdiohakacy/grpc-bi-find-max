@@ -3,7 +3,7 @@ syntax = "proto3";
 package calculator;
 
 service CalculatorService {
-    rpc FindMaximum (FindMaximumRequest) returns (FindMaximumResponse) {};
+    rpc FindMaximum (stream FindMaximumRequest) returns (stream FindMaximumResponse) {};
 }
 
 message FindMaximumRequest {

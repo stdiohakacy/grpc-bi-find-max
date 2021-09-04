@@ -1,7 +1,7 @@
 // GENERATED CODE -- DO NOT EDIT!
 
 'use strict';
-var grpc = require('grpc');
+var grpc = require('@grpc/grpc-js');
 var protos_calculator_pb = require('../protos/calculator_pb.js');
 
 function serialize_calculator_FindMaximumRequest(arg) {
@@ -30,8 +30,8 @@ function deserialize_calculator_FindMaximumResponse(buffer_arg) {
 var CalculatorServiceService = exports.CalculatorServiceService = {
   findMaximum: {
     path: '/calculator.CalculatorService/FindMaximum',
-    requestStream: false,
-    responseStream: false,
+    requestStream: true,
+    responseStream: true,
     requestType: protos_calculator_pb.FindMaximumRequest,
     responseType: protos_calculator_pb.FindMaximumResponse,
     requestSerialize: serialize_calculator_FindMaximumRequest,
